@@ -1,0 +1,1384 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>QUIZ DA EBD Fiel | Raabe: Uma Escolha de Fé que Mudou Destinos</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+/* ===== VARIÁVEIS E RESET ===== */
+:root {
+  --primary: #4361ee;
+  --primary-dark: #3a56d4;
+  --secondary: #7209b7;
+  --accent: #f72585;
+  --success: #4cc9f0;
+  --warning: #f8961e;
+  --danger: #f94144;
+  --light: #f8f9fa;
+  --dark: #212529;
+  --text: #343a40;
+  --gray: #6c757d;
+  --shadow: 0 10px 30px rgba(0,0,0,0.1);
+  --shadow-lg: 0 15px 50px rgba(0,0,0,0.15);
+  --gradient: linear-gradient(135deg, #4361ee 0%, #7209b7 100%);
+  --gradient-light: linear-gradient(135deg, #4cc9f0 0%, #4361ee 100%);
+  --instagram: #E1306C;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: var(--text);
+  min-height: 100vh;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  line-height: 1.6;
+}
+
+/* ===== CONTAINER PRINCIPAL ===== */
+.container {
+  max-width: 100%;
+  width: 100%;
+  background: white;
+  border-radius: 20px;
+  box-shadow: var(--shadow-lg);
+  overflow: hidden;
+  margin: 10px 0;
+  position: relative;
+}
+
+/* ===== HEADER MODERNO ===== */
+.modern-header {
+  background: var(--gradient);
+  color: white;
+  padding: 25px 20px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.header-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.1;
+  background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAiIGhlaWdodD0iMTAwIiB2aWV3Qm94PSIwIDAgMTAwIDEwMCI+PHBhdGggZD0iTTIxLDMwIEMyMSwzMCA0MCwzMCA1MCw0MCBDNjAsMzAgNzksMzAgNzksMzAgQzc5LDMwIDg1LDM1IDg1LDQwIEM4NSw0NSA3OSw1MCA3OSw1MCBDNzksNTAgNjAsNTAgNTAsNjAgQzQwLDUwIDIxLDUwIDIxLDUwIEMyMSw1MCAxNSw0NSAxNSw0MCBDMTUsMzUgMjEsMzAgMjEsMzAgWiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjZmZmIiBzdHJva2Utd2lkdGg9IjIiLz48L3N2Zz4=');
+  background-size: 150px;
+}
+
+.header-content {
+  position: relative;
+  z-index: 2;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.logo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.logo {
+  width: 120px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  overflow: hidden;
+  border-radius: 15px;
+  background: white;
+  padding: 10px;
+}
+
+.logo-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.logo-text {
+  text-align: center;
+}
+
+.logo-text h1 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.logo-text .subtitle {
+  font-size: 1rem;
+  opacity: 0.9;
+  font-weight: 400;
+  margin-top: 5px;
+}
+
+.welcome-card {
+  background: rgba(255,255,255,0.15);
+  backdrop-filter: blur(10px);
+  padding: 20px;
+  border-radius: 16px;
+  margin: 20px 0;
+  border: 1px solid rgba(255,255,255,0.2);
+  text-align: left;
+}
+
+.welcome-card h2 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.welcome-card p {
+  font-size: 1rem;
+  opacity: 0.9;
+  line-height: 1.5;
+}
+
+.cta-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.start-btn {
+  padding: 16px 35px;
+  border: none;
+  border-radius: 50px;
+  background: var(--accent);
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 0 8px 20px rgba(248, 37, 133, 0.4);
+  width: 100%;
+  max-width: 280px;
+  justify-content: center;
+}
+
+.start-btn:hover {
+  transform: translateY(-3px) scale(1.03);
+  box-shadow: 0 12px 25px rgba(248, 37, 133, 0.5);
+  background: #ff2d95;
+}
+
+.features {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 20px;
+  width: 100%;
+  max-width: 300px;
+}
+
+.feature {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(255,255,255,0.1);
+  padding: 12px 15px;
+  border-radius: 30px;
+  font-size: 0.9rem;
+  backdrop-filter: blur(5px);
+  justify-content: center;
+}
+
+/* ===== SEÇÃO DE CONTEÚDO ===== */
+.content-section {
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.about-card, .details-card {
+  background: var(--light);
+  border-radius: 16px;
+  padding: 25px 20px;
+  box-shadow: var(--shadow);
+}
+
+.card-title {
+  font-size: 1.3rem;
+  color: var(--primary);
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.card-content {
+  font-size: 0.95rem;
+  color: var(--text);
+  line-height: 1.6;
+}
+
+.card-content ul {
+  list-style: none;
+  margin-top: 15px;
+}
+
+.card-content li {
+  margin-bottom: 12px;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.card-content li i {
+  color: var(--primary);
+  margin-top: 3px;
+  flex-shrink: 0;
+}
+
+.highlight {
+  background: var(--gradient-light);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-weight: 600;
+}
+
+/* ===== SEÇÃO DO QUIZ ===== */
+.quiz-section {
+  display: none;
+  padding: 20px 15px;
+}
+
+.progress-container {
+  padding: 0 15px;
+  margin-bottom: 20px;
+}
+
+.progress-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.progress-text {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--primary);
+}
+
+.progress-bar {
+  height: 8px;
+  background: #e9ecef;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+.progress {
+  height: 100%;
+  background: var(--gradient);
+  border-radius: 10px;
+  transition: width 0.5s ease;
+  position: relative;
+}
+
+.progress::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-image: linear-gradient(
+    -45deg,
+    rgba(255, 255, 255, 0.2) 25%,
+    transparent 25%,
+    transparent 50%,
+    rgba(255, 255, 255, 0.2) 50%,
+    rgba(255, 255, 255, 0.2) 75%,
+    transparent 75%,
+    transparent
+  );
+  background-size: 20px 20px;
+  animation: move 1s linear infinite;
+}
+
+@keyframes move {
+  0% { background-position: 0 0; }
+  100% { background-position: 20px 0; }
+}
+
+.question {
+  margin-bottom: 25px;
+  padding: 20px;
+  border-radius: 16px;
+  background: white;
+  box-shadow: var(--shadow);
+  border-left: 5px solid var(--primary);
+}
+
+.question-header {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.question-difficulty {
+  padding: 8px 15px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: bold;
+  color: white;
+  align-self: flex-start;
+}
+
+.difficulty-easy { background: var(--success); }
+.difficulty-medium { background: var(--warning); }
+.difficulty-hard { background: var(--danger); }
+
+.question-text {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--primary);
+  line-height: 1.4;
+}
+
+.options {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+}
+
+.option {
+  padding: 16px 15px;
+  background: var(--light);
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  border: 2px solid transparent;
+  position: relative;
+}
+
+.option:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  border-color: var(--primary);
+}
+
+.option.selected.correct {
+  background: var(--success);
+  color: white;
+  border-color: var(--success);
+  transform: translateY(-2px);
+}
+
+.option.selected.incorrect {
+  background: var(--danger);
+  color: white;
+  border-color: var(--danger);
+  transform: translateY(-2px);
+}
+
+.option.correct-answer {
+  background: var(--success);
+  color: white;
+  border-color: var(--success);
+  animation: pulse 0.6s ease;
+}
+
+.option-letter {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  background: rgba(255,255,255,0.3);
+  border-radius: 50%;
+  margin-right: 12px;
+  font-weight: bold;
+  flex-shrink: 0;
+}
+
+.option.selected .option-letter,
+.option.correct-answer .option-letter {
+  background: rgba(255,255,255,0.2);
+}
+
+.feedback-icon {
+  margin-left: auto;
+  font-size: 1.1rem;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  flex-shrink: 0;
+}
+
+.option.selected.correct .feedback-icon,
+.option.correct-answer .feedback-icon {
+  opacity: 1;
+}
+
+.option.selected.incorrect .feedback-icon {
+  opacity: 1;
+}
+
+.option.locked {
+  cursor: not-allowed;
+}
+
+.option.locked:hover {
+  transform: none;
+  box-shadow: none;
+  border-color: transparent;
+}
+
+/* ===== NAVEGAÇÃO ===== */
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+  gap: 10px;
+}
+
+button {
+  padding: 14px 20px;
+  border: none;
+  border-radius: 50px;
+  background: var(--primary);
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.95rem;
+  flex: 1;
+  justify-content: center;
+}
+
+button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+button:disabled {
+  background: #bdc3c7;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+.btn-next {
+  background: var(--secondary);
+}
+
+/* ===== RESULTADOS ===== */
+.results {
+  text-align: center;
+  padding: 30px 20px;
+  display: none;
+}
+
+.results-header {
+  margin-bottom: 25px;
+}
+
+.score {
+  font-size: 3.5rem;
+  font-weight: 700;
+  background: var(--gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  margin: 15px 0;
+}
+
+.performance {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+  margin: 30px 0;
+}
+
+.performance-item {
+  text-align: center;
+  padding: 20px;
+  border-radius: 16px;
+  background: var(--light);
+  box-shadow: var(--shadow);
+}
+
+.performance-value {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 10px 0;
+}
+
+.performance-easy { color: var(--success); }
+.performance-medium { color: var(--warning); }
+.performance-hard { color: var(--danger); }
+
+.message {
+  font-size: 1.1rem;
+  margin: 25px 0;
+  padding: 20px;
+  border-radius: 16px;
+  background: var(--light);
+  box-shadow: var(--shadow);
+  line-height: 1.5;
+}
+
+/* ===== INFORMAÇÕES DA IGREJA E INSTAGRAM ===== */
+.church-info {
+  text-align: center;
+  padding: 20px;
+  background: var(--light);
+  border-top: 1px solid #dee2e6;
+}
+
+.church-name {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--primary);
+  margin-bottom: 5px;
+}
+
+.church-location {
+  color: var(--text);
+  opacity: 0.8;
+  font-size: 0.95rem;
+  margin-bottom: 15px;
+}
+
+.instagram-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.instagram-text {
+  font-size: 0.9rem;
+  color: var(--text);
+}
+
+.instagram-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  background: var(--instagram);
+  color: white;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(225, 48, 108, 0.3);
+}
+
+.instagram-link:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(225, 48, 108, 0.4);
+  background: #C13584;
+}
+
+.instagram-icon {
+  font-size: 1.2rem;
+}
+
+/* ===== ANIMAÇÕES ===== */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.02); }
+  100% { transform: scale(1); }
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+  40% {transform: translateY(-10px);}
+  60% {transform: translateY(-5px);}
+}
+
+.fade-in {
+  animation: fadeIn 0.5s ease forwards;
+}
+
+.bounce {
+  animation: bounce 0.6s;
+}
+
+/* ===== MELHORIAS PARA SMARTPHONE ===== */
+@media (max-width: 480px) {
+  body {
+    padding: 10px;
+  }
+  
+  .container {
+    border-radius: 16px;
+  }
+  
+  .modern-header {
+    padding: 20px 15px;
+  }
+  
+  .logo-text h1 {
+    font-size: 1.6rem;
+  }
+  
+  .logo {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .welcome-card {
+    padding: 15px;
+  }
+  
+  .content-section {
+    padding: 25px 15px;
+  }
+  
+  .about-card, .details-card {
+    padding: 20px 15px;
+  }
+  
+  .quiz-section {
+    padding: 15px 10px;
+  }
+  
+  .question {
+    padding: 15px;
+  }
+  
+  .question-text {
+    font-size: 1.1rem;
+  }
+  
+  .option {
+    padding: 14px 12px;
+  }
+  
+  .navigation {
+    flex-direction: column;
+  }
+  
+  button {
+    width: 100%;
+  }
+  
+  .results {
+    padding: 25px 15px;
+  }
+  
+  .score {
+    font-size: 3rem;
+  }
+}
+
+/* ===== MELHORIAS PARA TABLETS ===== */
+@media (min-width: 768px) {
+  .container {
+    max-width: 700px;
+  }
+  
+  .logo-container {
+    flex-direction: row;
+    text-align: left;
+  }
+  
+  .logo-text {
+    text-align: left;
+  }
+  
+  .features {
+    flex-direction: row;
+    max-width: 100%;
+  }
+  
+  .performance {
+    flex-direction: row;
+  }
+  
+  .navigation {
+    flex-direction: row;
+  }
+  
+  .instagram-section {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+/* ===== MELHORIAS PARA DESKTOP ===== */
+@media (min-width: 992px) {
+  .container {
+    max-width: 900px;
+  }
+  
+  .content-section {
+    grid-template-columns: 1fr 1fr;
+    display: grid;
+  }
+}
+</style>
+</head>
+<body>
+<div class="container fade-in">
+  <!-- HEADER MODERNO -->
+  <header class="modern-header">
+    <div class="header-bg"></div>
+    <div class="header-content">
+      <div class="logo-container">
+        <div class="logo">
+          <img src="https://i.ibb.co/9mLXgx7k/logo.png" alt="Logo EBD Fiel" class="logo-img" id="logo-img">
+          <div class="logo-fallback" id="logo-fallback" style="display: none;">
+            <i class="fas fa-book-bible"></i>
+          </div>
+        </div>
+        <div class="logo-text">
+          <h1>QUIZ DA EBD Fiel</h1>
+          <div class="subtitle">Lição 04: Raabe - Uma Escolha de Fé que Mudou Destinos</div>
+        </div>
+      </div>
+
+      <div class="welcome-card">
+        <h2><i class="fas fa-hands"></i> Bem-vindo ao Quiz da EBD Fiel!</h2>
+        <p>Descubra a história de Raabe, uma mulher que, através de uma escolha de fé, mudou seu destino e se tornou parte da linhagem de Jesus Cristo.</p>
+      </div>
+
+      <div class="cta-section">
+        <button class="start-btn" id="start-btn">
+          <i class="fas fa-play"></i> Iniciar Quiz
+        </button>
+
+        <div class="features">
+          <div class="feature">
+            <i class="fas fa-star" style="color: #4cc9f0;"></i>
+            <span>15 Perguntas</span>
+          </div>
+          <div class="feature">
+            <i class="fas fa-check-circle" style="color: #f8961e;"></i>
+            <span>Feedback Imediato</span>
+          </div>
+          <div class="feature">
+            <i class="fas fa-graduation-cap" style="color: #f94144;"></i>
+            <span>Aprenda com a Bíblia</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- SEÇÃO DE CONTEÚDO -->
+  <section class="content-section">
+    <div class="about-card">
+      <h2 class="card-title"><i class="fas fa-info-circle"></i> Sobre Esta Lição</h2>
+      <div class="card-content">
+        <p>Nesta lição, estudaremos a história de Raabe, uma mulher cananeia que, apesar de sua profissão e origem, demonstrou uma fé extraordinária no Deus de Israel.</p>
+        <p>Raabe nos ensina sobre redenção, fé genuína e como Deus pode transformar vidas independentemente de nosso passado.</p>
+        <p><span class="highlight">A fé que transforma destinos</span> é um princípio que continua relevante para todos os que buscam a Deus hoje.</p>
+      </div>
+    </div>
+
+    <div class="details-card">
+      <h2 class="card-title"><i class="fas fa-book-open"></i> O Que Você Vai Aprender</h2>
+      <div class="card-content">
+        <ul>
+          <li><i class="fas fa-check"></i> O contexto histórico de Jericó e Raabe</li>
+          <li><i class="fas fa-check"></i> A coragem e fé de Raabe</li>
+          <li><i class="fas fa-check"></i> O sinal do cordão vermelho</li>
+          <li><i class="fas fa-check"></i> A transformação de Raabe e sua família</li>
+          <li><i class="fas fa-check"></i> O legado de Raabe na genealogia de Jesus</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEÇÃO DO QUIZ -->
+  <div class="quiz-section" id="quiz-section">
+    <div class="progress-container">
+      <div class="progress-header">
+        <div class="progress-text" id="progress-text">Pergunta 1 de 15</div>
+      </div>
+      <div class="progress-bar">
+        <div class="progress" id="quiz-progress"></div>
+      </div>
+    </div>
+
+    <div class="quiz-container" id="quiz-container">
+      <!-- Perguntas serão inseridas aqui pelo JavaScript -->
+    </div>
+
+    <div class="navigation">
+      <button id="prev-btn" disabled>
+        <i class="fas fa-arrow-left"></i> Anterior
+      </button>
+      <button id="next-btn" class="btn-next">
+        Próxima <i class="fas fa-arrow-right"></i>
+      </button>
+    </div>
+  </div>
+
+  <!-- SEÇÃO DE RESULTADOS -->
+  <div class="results" id="results">
+    <div class="results-header">
+      <h2><i class="fas fa-trophy"></i> Resultado Final</h2>
+    </div>
+    <div class="score" id="score">0/0</div>
+
+    <div class="performance" id="performance">
+      <div class="performance-item">
+        <div class="performance-value performance-easy" id="correct-easy">0</div>
+        <div>Fáceis</div>
+      </div>
+      <div class="performance-item">
+        <div class="performance-value performance-medium" id="correct-medium">0</div>
+        <div>Médias</div>
+      </div>
+      <div class="performance-item">
+        <div class="performance-value performance-hard" id="correct-hard">0</div>
+        <div>Difíceis</div>
+      </div>
+    </div>
+
+    <div class="message" id="message"></div>
+
+    <button id="restart-btn" style="background: var(--success);">
+      <i class="fas fa-redo"></i> Fazer Quiz Novamente
+    </button>
+  </div>
+
+  <!-- Informações da Igreja e Instagram -->
+  <div class="church-info">
+    <div class="church-name" id="church-name">EBD FIEL</div>
+    <div class="church-location" id="church-location">FIEL A PALAVRA</div>
+
+    <div class="instagram-section">
+      <div class="instagram-text">Curta nossa página no Instagram:</div>
+      <a href="https://www.instagram.com/ebdfiel" target="_blank" class="instagram-link">
+        <i class="fab fa-instagram instagram-icon"></i>
+        @ebdfiel
+      </a>
+    </div>
+  </div>
+</div>
+
+<script>
+// =============================================
+// CONFIGURAÇÕES PERSONALIZÁVEIS
+// =============================================
+
+// 1. CONFIGURAÇÃO DA LOGO
+const logoConfig = {
+  imageUrl: "https://i.ibb.co/9mLXgx7k/logo.png",
+  fallbackText: "EBD"
+};
+
+// 2. INFORMAÇÕES DA IGREJA
+const churchInfo = {
+  name: "EBD FIEL",
+  location: "FIEL A PALAVRA"
+};
+
+// 3. CONFIGURAÇÕES DO QUIZ
+const quizConfig = {
+  title: "Lição 04: Raabe - Uma Escolha de Fé que Mudou Destinos",
+  welcomeMessage: "Descubra a história de Raabe, uma mulher que, através de uma escolha de fé, mudou seu destino e se tornou parte da linhagem de Jesus Cristo.",
+  theme: "Raabe e sua transformação através da fé",
+  objective: "Aprender sobre fé, redenção e como Deus transforma vidas independentemente do passado"
+};
+
+// =============================================
+// BANCO DE PERGUNTAS - LIÇÃO 04: RAABE
+// =============================================
+
+const allQuestions = [
+  // PERGUNTAS FÁCEIS (5)
+  {
+    question: "Qual era a profissão de Raabe antes de conhecer o Deus de Israel?",
+    options: [
+      "Tecelã",
+      "Vendedora de púrpura",
+      "Hospedeira",
+      "Prostituta"
+    ],
+    correct: 3,
+    explanation: "A Bíblia descreve Raabe como uma prostituta que vivia em Jericó (Josué 2:1). Apesar de sua profissão, ela demonstrou grande fé no Deus de Israel.",
+    difficulty: "easy"
+  },
+  {
+    question: "Em qual cidade Raabe morava?",
+    options: [
+      "Jerusalém",
+      "Jericó",
+      "Betel",
+      "Ai"
+    ],
+    correct: 1,
+    explanation: "Raabe morava na cidade de Jericó, uma cidade fortificada que os israelitas precisavam conquistar para entrar na Terra Prometida (Josué 2:1).",
+    difficulty: "easy"
+  },
+  {
+    question: "Quantos espias israelitas Raabe escondeu em sua casa?",
+    options: [
+      "Um",
+      "Dois",
+      "Três",
+      "Doze"
+    ],
+    correct: 1,
+    explanation: "Raabe escondeu dois espias israelitas que Josué havia enviado para observar a terra de Jericó (Josué 2:1).",
+    difficulty: "easy"
+  },
+  {
+    question: "Onde Raabe escondeu os espias israelitas?",
+    options: [
+      "No porão",
+      "No telhado, entre os talos de linho",
+      "Em um poço",
+      "Atrás de uma parede falsa"
+    ],
+    correct: 1,
+    explanation: "Raabe escondeu os espias no telhado de sua casa, entre os talos de linho que ela havia colocado para secar (Josué 2:6).",
+    difficulty: "easy"
+  },
+  {
+    question: "Qual sinal Raabe recebeu para identificar sua casa durante a destruição de Jericó?",
+    options: [
+      "Uma bandeira branca",
+      "Um cordão de escarlata (vermelho)",
+      "Uma luz na janela",
+      "Uma cruz desenhada na porta"
+    ],
+    correct: 1,
+    explanation: "Raabe amarrou um cordão de escarlata (vermelho) na janela de sua casa como sinal para que ela e sua família fossem poupados quando os israelitas atacassem Jericó (Josué 2:18).",
+    difficulty: "easy"
+  },
+  // PERGUNTAS MÉDIAS (5)
+  {
+    question: "Qual foi a condição estabelecida para que Raabe e sua família fossem poupados?",
+    options: [
+      "Que se convertessem ao judaísmo",
+      "Que permanecessem dentro de casa durante o ataque",
+      "Que se mudassem para outro lugar",
+      "Que pagassem um resgate"
+    ],
+    correct: 1,
+    explanation: "A condição para que Raabe e sua família fossem poupados era que permanecessem dentro de casa durante o ataque a Jericó. Se alguém saísse, o sangue deles seria sobre sua própria cabeça (Josué 2:19).",
+    difficulty: "medium"
+  },
+  {
+    question: "Além de sua família imediata, quem mais Raabe salvou em Jericó?",
+    options: [
+      "Seus vizinhos",
+      "Seus amigos",
+      "Seus parentes mais distantes",
+      "Ninguém além de sua família imediata"
+    ],
+    correct: 3,
+    explanation: "A Bíblia menciona especificamente que Raabe salvou apenas seu pai, sua mãe, seus irmãos e todos os da família de seu pai (Josué 2:13).",
+    difficulty: "medium"
+  },
+  {
+    question: "O que Raabe confessou aos espias sobre o Deus de Israel?",
+    options: [
+      "Que Ele era mais poderoso que os deuses de Canaã",
+      "Que o povo de Jericó estava com muito medo dos israelitas",
+      "Que o Senhor havia dado a terra aos israelitas",
+      "Todas as alternativas anteriores"
+    ],
+    correct: 3,
+    explanation: "Raabe confessou que o povo de Jericó estava com medo, que sabiam que o Senhor havia dado a terra aos israelitas e reconheceu que o Deus de Israel era Deus em cima nos céus e embaixo na terra (Josué 2:9-11).",
+    difficulty: "medium"
+  },
+  {
+    question: "Em qual livro do Novo Testamento Raabe é mencionada como exemplo de fé?",
+    options: [
+      "Mateus",
+      "Hebreus",
+      "Tiago",
+      "Romanos"
+    ],
+    correct: 1,
+    explanation: "Raabe é mencionada no livro de Hebreus como um exemplo de fé: 'Pela fé, Raabe, a meretriz, não pereceu com os incrédulos, tendo acolhido com paz aos espias' (Hebreus 11:31).",
+    difficulty: "medium"
+  },
+  {
+    question: "Qual destas NÃO é uma característica da fé de Raabe destacada na Bíblia?",
+    options: [
+      "Ela agiu com base no que ouviu sobre Deus",
+      "Ela colocou em risco sua própria vida",
+      "Ela exigiu recompensa antes de ajudar",
+      "Ela protegeu os mensageiros de Deus"
+    ],
+    correct: 2,
+    explanation: "Raabe não exigiu recompensa antes de ajudar os espias. Pelo contrário, ela os protegeu por fé, reconhecendo a soberania do Deus de Israel, e só depois pediu misericórdia para si e sua família.",
+    difficulty: "medium"
+  },
+  // PERGUNTAS DIFÍCEIS (5)
+  {
+    question: "Qual é a conexão de Raabe com a linhagem do rei Davi e Jesus Cristo?",
+    options: [
+      "Ela se casou com Salomão",
+      "Ela se casou com Salmom e foi mãe de Boaz",
+      "Ela foi avó de Jessé",
+      "Ela se casou com um dos espias"
+    ],
+    correct: 1,
+    explanation: "Raabe se casou com Salmom e tornou-se mãe de Boaz, que se casou com Rute e foi avô de Jessé, pai do rei Davi. Assim, Raabe faz parte da genealogia de Jesus (Mateus 1:5).",
+    difficulty: "hard"
+  },
+  {
+    question: "Além de Hebreus, em qual outro livro do Novo Testamento Raabe é mencionada como exemplo?",
+    options: [
+      "Tiago",
+      "1 Pedro",
+      "Romanos",
+      "Apocalipse"
+    ],
+    correct: 0,
+    explanation: "Além de Hebreus 11:31, Raabe é mencionada em Tiago 2:25 como exemplo de alguém que foi justificada pelas obras, quando acolheu os emissários e os fez sair por outro caminho.",
+    difficulty: "hard"
+  },
+  {
+    question: "O que o cordão vermelho na janela de Raabe pode simbolizar profeticamente?",
+    options: [
+      "A proteção do anjo da morte no Egito",
+      "O sangue de Cristo que nos protege do juízo",
+      "A bandeira de vitória de Israel",
+      "O fogo do Espírito Santo"
+    ],
+    correct: 1,
+    explanation: "Assim como o sangue nas portas no Egito protegeu os israelitas, o cordão vermelho na janela de Raabe é visto por muitos como um símbolo profético do sangue de Cristo que nos protege do juízo divino.",
+    difficulty: "hard"
+  },
+  {
+    question: "Qual era a condição social de Raabe após se juntar a Israel, de acordo com a tradição judaica?",
+    options: [
+      "Ela se tornou uma profetisa",
+      "Ela se casou com Josué",
+      "Ela se tornou uma das mulheres mais importantes de Israel",
+      "Ela permaneceu marginalizada pela sociedade"
+    ],
+    correct: 2,
+    explanation: "De acordo com a tradição judaica, Raabe se tornou uma das mulheres mais importantes de Israel após sua conversão, sendo ancestral de reis, profetas e sacerdotes, incluindo Jeremias e Ezequiel.",
+    difficulty: "hard"
+  },
+  {
+    question: "Qual lição importante sobre a graça de Deus podemos aprender com a história de Raabe?",
+    options: [
+      "Deus só salva pessoas com bom caráter moral",
+      "O passado de uma pessoa limita o que Deus pode fazer por ela",
+      "Deus pode redimir e usar qualquer pessoa, independentemente de seu passado",
+      "A salvação depende das boas obras que praticamos"
+    ],
+    correct: 2,
+    explanation: "A história de Raabe nos ensina que Deus pode redimir e usar qualquer pessoa, independentemente de seu passado. Sua fé genuína foi o que a salvou e a tornou parte do plano redentor de Deus.",
+    difficulty: "hard"
+  }
+];
+
+// =============================================
+// VARIÁVEIS GLOBAIS DO QUIZ
+// =============================================
+let currentQuestionIndex = 0;
+let userAnswers = [];
+let score = 0;
+let quizStarted = false;
+
+// =============================================
+// ELEMENTOS DO DOM
+// =============================================
+const startBtn = document.getElementById('start-btn');
+const quizSection = document.getElementById('quiz-section');
+const contentSection = document.querySelector('.content-section');
+const modernHeader = document.querySelector('.modern-header');
+const quizContainer = document.getElementById('quiz-container');
+const progressText = document.getElementById('progress-text');
+const quizProgress = document.getElementById('quiz-progress');
+const prevBtn = document.getElementById('prev-btn');
+const nextBtn = document.getElementById('next-btn');
+const resultsSection = document.getElementById('results');
+const scoreElement = document.getElementById('score');
+const correctEasyElement = document.getElementById('correct-easy');
+const correctMediumElement = document.getElementById('correct-medium');
+const correctHardElement = document.getElementById('correct-hard');
+const messageElement = document.getElementById('message');
+const restartBtn = document.getElementById('restart-btn');
+const churchNameElement = document.getElementById('church-name');
+const churchLocationElement = document.getElementById('church-location');
+
+// =============================================
+// INICIALIZAÇÃO
+// =============================================
+document.addEventListener('DOMContentLoaded', function() {
+  // Configurar informações da igreja
+  churchNameElement.textContent = churchInfo.name;
+  churchLocationElement.textContent = churchInfo.location;
+  
+  // Verificar se a logo carrega
+  const logoImg = document.getElementById('logo-img');
+  const logoFallback = document.getElementById('logo-fallback');
+  
+  logoImg.onerror = function() {
+    logoImg.style.display = 'none';
+    logoFallback.style.display = 'flex';
+    logoFallback.innerHTML = `<i class="fas fa-book-bible"></i>`;
+  };
+  
+  // Adicionar event listeners
+  startBtn.addEventListener('click', startQuiz);
+  prevBtn.addEventListener('click', showPreviousQuestion);
+  nextBtn.addEventListener('click', showNextQuestion);
+  restartBtn.addEventListener('click', restartQuiz);
+});
+
+// =============================================
+// FUNÇÕES DO QUIZ
+// =============================================
+
+function startQuiz() {
+  quizStarted = true;
+  modernHeader.style.display = 'none';
+  contentSection.style.display = 'none';
+  quizSection.style.display = 'block';
+  
+  userAnswers = new Array(allQuestions.length).fill(null);
+  currentQuestionIndex = 0;
+  score = 0;
+  
+  showQuestion(currentQuestionIndex);
+  updateProgress();
+}
+
+function showQuestion(index) {
+  const question = allQuestions[index];
+  
+  // Atualizar texto de progresso
+  progressText.textContent = `Pergunta ${index + 1} de ${allQuestions.length}`;
+  
+  // Atualizar barra de progresso
+  const progressPercentage = ((index + 1) / allQuestions.length) * 100;
+  quizProgress.style.width = `${progressPercentage}%`;
+  
+  // Criar HTML da pergunta
+  let questionHTML = `
+    <div class="question">
+      <div class="question-header">
+        <span class="question-difficulty difficulty-${question.difficulty}">
+          ${question.difficulty === 'easy' ? 'Fácil' : question.difficulty === 'medium' ? 'Médio' : 'Difícil'}
+        </span>
+        <div class="question-text">${question.question}</div>
+      </div>
+      <div class="options">
+  `;
+  
+  // Adicionar opções de resposta
+  question.options.forEach((option, optionIndex) => {
+    const isSelected = userAnswers[index] === optionIndex;
+    const isCorrect = optionIndex === question.correct;
+    let optionClass = 'option';
+    
+    if (isSelected) {
+      optionClass += isCorrect ? ' selected correct' : ' selected incorrect';
+    }
+    
+    questionHTML += `
+      <div class="${optionClass}" data-index="${optionIndex}">
+        <span class="option-letter">${String.fromCharCode(65 + optionIndex)}</span>
+        <span class="option-text">${option}</span>
+        <span class="feedback-icon">
+          ${isSelected && isCorrect ? '<i class="fas fa-check"></i>' : ''}
+          ${isSelected && !isCorrect ? '<i class="fas fa-times"></i>' : ''}
+        </span>
+      </div>
+    `;
+  });
+  
+  questionHTML += `</div></div>`;
+  
+  quizContainer.innerHTML = questionHTML;
+  
+  // Adicionar event listeners às opções
+  document.querySelectorAll('.option').forEach(option => {
+    option.addEventListener('click', function() {
+      if (!this.classList.contains('locked')) {
+        selectOption(this, index);
+      }
+    });
+  });
+  
+  // Atualizar estado dos botões de navegação
+  updateNavigationButtons();
+}
+
+function selectOption(selectedOption, questionIndex) {
+  const options = document.querySelectorAll('.option');
+  const selectedIndex = parseInt(selectedOption.getAttribute('data-index'));
+  
+  // Marcar todas as opções como bloqueadas
+  options.forEach(option => {
+    option.classList.add('locked');
+  });
+  
+  // Marcar a opção selecionada
+  selectedOption.classList.add('selected');
+  
+  // Verificar se a resposta está correta
+  const isCorrect = selectedIndex === allQuestions[questionIndex].correct;
+  
+  if (isCorrect) {
+    selectedOption.classList.add('correct');
+    score++;
+  } else {
+    selectedOption.classList.add('incorrect');
+    
+    // Destacar a resposta correta
+    options.forEach(option => {
+      if (parseInt(option.getAttribute('data-index')) === allQuestions[questionIndex].correct) {
+        option.classList.add('correct-answer');
+      }
+    });
+  }
+  
+  // Salvar resposta do usuário
+  userAnswers[questionIndex] = selectedIndex;
+  
+  // Atualizar estado dos botões de navegação
+  updateNavigationButtons();
+}
+
+function updateNavigationButtons() {
+  // Botão Anterior
+  if (currentQuestionIndex === 0) {
+    prevBtn.disabled = true;
+  } else {
+    prevBtn.disabled = false;
+  }
+  
+  // Botão Próxima
+  if (currentQuestionIndex === allQuestions.length - 1) {
+    nextBtn.textContent = 'Ver Resultados';
+    nextBtn.innerHTML = 'Ver Resultados <i class="fas fa-chart-bar"></i>';
+  } else {
+    nextBtn.textContent = 'Próxima';
+    nextBtn.innerHTML = 'Próxima <i class="fas fa-arrow-right"></i>';
+  }
+  
+  // Habilitar/Desabilitar botão Próxima baseado na resposta
+  if (userAnswers[currentQuestionIndex] === null) {
+    nextBtn.disabled = true;
+  } else {
+    nextBtn.disabled = false;
+  }
+}
+
+function showPreviousQuestion() {
+  if (currentQuestionIndex > 0) {
+    currentQuestionIndex--;
+    showQuestion(currentQuestionIndex);
+  }
+}
+
+function showNextQuestion() {
+  if (currentQuestionIndex < allQuestions.length - 1) {
+    currentQuestionIndex++;
+    showQuestion(currentQuestionIndex);
+  } else {
+    showResults();
+  }
+}
+
+function showResults() {
+  quizSection.style.display = 'none';
+  resultsSection.style.display = 'block';
+  
+  // Calcular estatísticas por dificuldade
+  let correctEasy = 0, totalEasy = 0;
+  let correctMedium = 0, totalMedium = 0;
+  let correctHard = 0, totalHard = 0;
+  
+  allQuestions.forEach((question, index) => {
+    if (question.difficulty === 'easy') {
+      totalEasy++;
+      if (userAnswers[index] === question.correct) correctEasy++;
+    } else if (question.difficulty === 'medium') {
+      totalMedium++;
+      if (userAnswers[index] === question.correct) correctMedium++;
+    } else if (question.difficulty === 'hard') {
+      totalHard++;
+      if (userAnswers[index] === question.correct) correctHard++;
+    }
+  });
+  
+  // Atualizar elementos de resultado
+  scoreElement.textContent = `${score}/${allQuestions.length}`;
+  correctEasyElement.textContent = `${correctEasy}/${totalEasy}`;
+  correctMediumElement.textContent = `${correctMedium}/${totalMedium}`;
+  correctHardElement.textContent = `${correctHard}/${totalHard}`;
+  
+  // Mensagem personalizada baseada no desempenho
+  const percentage = (score / allQuestions.length) * 100;
+  let message = '';
+  
+  if (percentage >= 90) {
+    message = 'Excelente! Você demonstrou um conhecimento profundo sobre Raabe e sua história de fé. Assim como ela, sua fé está firme na promessa de Deus!';
+  } else if (percentage >= 70) {
+    message = 'Muito bom! Você conhece bem a história de Raabe e compreende as lições importantes sobre fé e redenção que ela nos ensina.';
+  } else if (percentage >= 50) {
+    message = 'Bom trabalho! Você tem um conhecimento básico sobre Raabe, mas pode aprofundar mais no estudo dessa história inspiradora de fé.';
+  } else {
+    message = 'Continue estudando! A história de Raabe tem lições preciosas sobre como a fé pode transformar destinos. Vale a pena conhecer melhor essa história!';
+  }
+  
+  messageElement.textContent = message;
+}
+
+function restartQuiz() {
+  resultsSection.style.display = 'none';
+  modernHeader.style.display = 'block';
+  contentSection.style.display = 'flex';
+  quizStarted = false;
+}
+</script>
+</body>
+</html>
